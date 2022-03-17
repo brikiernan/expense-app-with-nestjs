@@ -2,8 +2,8 @@ export interface Report {
   id: string;
   source: string;
   amount: number;
-  created: Date;
-  updated: Date;
+  created_at: Date;
+  updated_at: Date;
   type: ReportType;
 }
 
@@ -20,27 +20,27 @@ export const data: Data = {
   report: [
     {
       amount: 7500,
-      created: new Date(),
+      created_at: new Date(),
       id: 'uuid1',
       source: 'Salary',
       type: ReportType.income,
-      updated: new Date(),
+      updated_at: new Date(),
     },
     {
       amount: 2500,
-      created: new Date(),
+      created_at: new Date(),
       id: 'uuid2',
       source: 'YouTube',
       type: ReportType.income,
-      updated: new Date(),
+      updated_at: new Date(),
     },
     {
       amount: 500,
-      created: new Date(),
+      created_at: new Date(),
       id: 'uuid3',
       source: 'Food',
       type: ReportType.expense,
-      updated: new Date(),
+      updated_at: new Date(),
     },
   ],
 };
